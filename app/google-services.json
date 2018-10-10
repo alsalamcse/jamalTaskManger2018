@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "919353849006",
+    "firebase_url": "https://jamaltaskmanger2018.firebaseio.com",
+    "project_id": "jamaltaskmanger2018",
+    "storage_bucket": "jamaltaskmanger2018.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:919353849006:android:d00d3b71bf2b1b98",
+        "android_client_info": {
+          "package_name": "com.samniya.jamal.jamaltaskmanger2018"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "919353849006-9r886r121hm6hc084nd562nsro9ob005.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.samniya.jamal.jamaltaskmanger2018",
+            "certificate_hash": "1434a17f336da03d3116b6bb858ec9e24e731acf"
+          }
+        },
+        {
+          "client_id": "919353849006-f16nmgn9knr5ojrb8qiuajv2513snbvo.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCgvgAhuES_V62nNqQHTkCqNkm8e5QdMuc"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "919353849006-f16nmgn9knr5ojrb8qiuajv2513snbvo.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
