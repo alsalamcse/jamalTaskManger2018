@@ -6,6 +6,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
+import com.samniya.jamal.jamaltaskmanger2018.R;
 import com.samniya.jamal.jamaltaskmanger2018.taskFragments.MyTasksFragmentFragment.OnListFragmentInteractionListener;
 import com.samniya.jamal.jamaltaskmanger2018.taskFragments.dummy.DummyContent.DummyItem;
 
