@@ -38,12 +38,47 @@ public class SignUpActivity extends AppCompatActivity {
         saveBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                finish();
+                dataHandler();
             }
         });
 
 
     }
+
+    /**
+     * get email and password from the field and try to creat a new user
+     */
+    private void dataHandler()
+    {
+        boolean isOk=true;//if all the fields filled well
+        String email=emailET.getText().toString();
+        String pass1=passwordET.getText().toString();
+        String fname=firstNameET.getText().toString();
+        String lname=lastNameET.getText().toString();
+        String phone=phoneET.getText().toString();
+        if(email.length()<4||email.indexOf('@')<0||email.indexOf('.')<0)
+        {
+            emailET.setError("WRONG EMAIL");
+            isOk=false;
+
+        }
+        if (pass1.length()<8)
+        {
+            passwordET.setError("HAVE TO BE AT LEAST 8 CHAR");
+            isOk=false;
+        }
+        if (isOk)
+        {
+            creatAcount(email,pass1);
+        }
+
+    }
+
+    /**
+     * creat firebase user using email and password
+     * @param email user email
+     * @param passw user password
+     */
     private void creatAcount(String email, String passw) {
         auth.createUserWithEmailAndPassword(email,passw).addOnCompleteListener(SignUpActivity.this, new OnCompleteListener<AuthResult>() {
             @Override
@@ -61,6 +96,7 @@ public class SignUpActivity extends AppCompatActivity {
                 }
             }
         });
+
     }
 
 
