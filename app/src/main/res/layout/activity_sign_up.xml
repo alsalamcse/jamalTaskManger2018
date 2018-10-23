@@ -29,12 +29,12 @@
     <EditText
         android:id="@+id/phoneET"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="48dp"
         android:ems="10"
         android:inputType="textPersonName"
         android:text="Phone"
         tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="168dp" />
+        tools:layout_editor_absoluteY="166dp" />
 
     <EditText
         android:id="@+id/passwordET"
