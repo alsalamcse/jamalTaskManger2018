@@ -7,7 +7,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 
-public class LogInActivity extends AppCompatActivity {
+public class LogInActivity extends AppCompatActivity
 
     private EditText eMail;
     private EditText password;
@@ -16,29 +16,35 @@ public class LogInActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_log_in);
-        eMail=findViewById(R.id.eMail);
-        password=findViewById(R.id.password);
-        signInBtn=findViewById(R.id.signInBtn);
-        signUpBtn=findViewById(R.id.signInBtn);
+        eMail = findViewById(R.id.eMail);
+        password = findViewById(R.id.password);
+        signInBtn = findViewById(R.id.signInBtn);
+        signUpBtn = findViewById(R.id.signInBtn);
 
         signInBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent1=new Intent(LogInActivity.this,MainTabsActivity.class);
+                Intent intent1 = new Intent(LogInActivity.this, MainTabsActivity.class);
             }
         });
 
         signUpBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(LogInActivity.this,SignUpActivity.class);
+                Intent intent = new Intent(LogInActivity.this, SignUpActivity.class);
                 startActivity(intent);
             }
         });
     }
-
-
+}
 
 }
+
+
+
+
+
