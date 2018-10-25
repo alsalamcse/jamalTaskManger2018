@@ -27,6 +27,14 @@
         tools:layout_editor_absoluteX="16dp"
         tools:layout_editor_absoluteY="73dp" />
 
+    <TextView
+        android:id="@+id/iTv"
+        android:layout_width="95dp"
+        android:layout_height="31dp"
+        android:text="Important"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="137dp" />
+
     <SeekBar
         android:id="@+id/seekBar1"
         style="@style/Widget.AppCompat.SeekBar.Discrete"
@@ -37,6 +45,14 @@
         tools:layout_editor_absoluteX="16dp"
         tools:layout_editor_absoluteY="169dp" />
 
+    <TextView
+        android:id="@+id/nTv"
+        android:layout_width="83dp"
+        android:layout_height="29dp"
+        android:text="Necessary"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="207dp" />
+
     <SeekBar
         android:id="@+id/seekBar2"
         style="@style/Widget.AppCompat.SeekBar.Discrete"
@@ -46,30 +62,6 @@
         android:progress="3"
         tools:layout_editor_absoluteX="16dp"
         tools:layout_editor_absoluteY="236dp" />
-
-    <Button
-        android:id="@+id/saveBtn1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Save"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="428dp" />
-
-    <TextView
-        android:id="@+id/iTv"
-        android:layout_width="95dp"
-        android:layout_height="31dp"
-        android:text="Important"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="137dp" />
-
-    <TextView
-        android:id="@+id/nTv"
-        android:layout_width="83dp"
-        android:layout_height="29dp"
-        android:text="Necessary"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="207dp" />
 
     <EditText
         android:id="@+id/editText3"
@@ -85,8 +77,16 @@
         android:id="@+id/datePicker"
         android:layout_width="278dp"
         android:layout_height="wrap_content"
-        android:text="Button"
+        android:text="DatePicker"
         tools:layout_editor_absoluteX="53dp"
         tools:layout_editor_absoluteY="360dp" />
+
+    <Button
+        android:id="@+id/saveBtn1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Save"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="428dp" />
 
 </LinearLayout>
