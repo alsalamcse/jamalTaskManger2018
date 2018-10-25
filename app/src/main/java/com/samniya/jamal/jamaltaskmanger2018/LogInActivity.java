@@ -7,7 +7,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 
-public class LogInActivity extends AppCompatActivity
+public class LogInActivity extends AppCompatActivity{
 
     private EditText eMail;
     private EditText password;
@@ -42,7 +42,7 @@ public class LogInActivity extends AppCompatActivity
     }
 }
 
-}
+
 
 
 
