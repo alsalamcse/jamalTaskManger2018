@@ -32,7 +32,7 @@
         android:layout_width="110dp"
         android:layout_height="wrap_content"
         android:layout_marginEnd="56dp"
-        android:onClick="onClick1"
+        android:onClick="onClick2"
         android:text="Sign In"
         app:layout_constraintEnd_toEndOf="parent"
         tools:layout_editor_absoluteY="155dp" />
@@ -41,7 +41,7 @@
         android:id="@+id/signUpBtn"
         android:layout_width="155dp"
         android:layout_height="60dp"
-        android:onClick="onClick2"
+        android:onClick="onClick1"
         android:text="Sign Up"
         tools:layout_editor_absoluteX="31dp"
         tools:layout_editor_absoluteY="415dp" />

@@ -23,7 +23,7 @@ public class LogInActivity extends AppCompatActivity{
         eMail = findViewById(R.id.eMail);
         password = findViewById(R.id.password);
         signInBtn = findViewById(R.id.signInBtn);
-        signUpBtn = findViewById(R.id.signInBtn);
+        signUpBtn = findViewById(R.id.signUpBtn);
 
         signInBtn.setOnClickListener(new View.OnClickListener() {
             @Override
