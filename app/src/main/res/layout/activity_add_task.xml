@@ -42,6 +42,7 @@
         android:layout_height="35dp"
         android:max="10"
         android:progress="3"
+        android:visibility="visible"
         tools:layout_editor_absoluteX="16dp"
         tools:layout_editor_absoluteY="169dp" />
 

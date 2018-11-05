@@ -10,25 +10,25 @@ import android.widget.TextView;
 
 public class AddTaskActivity extends Activity {
 
-    private EditText titleET,taskET,editText3;
-    private SeekBar seekBar1,seekBar2;
-    private TextView iTv,nTv;
-    private Button saveBtn1,datePicker;
+    private EditText titleET, taskET, editText3;
+    private SeekBar seekBar1, seekBar2;
+    private TextView iTv, nTv;
+    private Button saveBtn1, datePicker;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_add_task);
 
-        titleET=findViewById(R.id.titleET);
-        editText3=findViewById(R.id.editText3);
-        taskET=findViewById(R.id.taskET);
-        seekBar1=findViewById(R.id.seekBar1);
-        seekBar2=findViewById(R.id.seekBar2);
-        iTv=findViewById(R.id.iTv);
-        nTv=findViewById(R.id.nTv);
-        saveBtn1=findViewById(R.id.saveBtn1);
-        datePicker=findViewById(R.id.datePicker);
+        titleET = findViewById(R.id.titleET);
+        editText3 = findViewById(R.id.editText3);
+        taskET = findViewById(R.id.taskET);
+        seekBar1 = findViewById(R.id.seekBar1);
+        seekBar2 = findViewById(R.id.seekBar2);
+        iTv = findViewById(R.id.iTv);
+        nTv = findViewById(R.id.nTv);
+        saveBtn1 = findViewById(R.id.saveBtn1);
+        datePicker = findViewById(R.id.datePicker);
 
         saveBtn1.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -42,15 +42,19 @@ public class AddTaskActivity extends Activity {
 
             }
         });
+    }
 
 
+        private void dataHandler ()
+        {
+            boolean isOk = true;//if all the fields filled well
+            String Title = titleET.getText().toString();
+            String Task = taskET.getText().toString();
+            String DueDate = editText3.getText().toString();
+            int SeekBar1 = seekBar1.getProgress();
+            int SeekBar2 = seekBar2.getProgress();
 
-
-
-
-
-
+        }
 
 
     }
-}
