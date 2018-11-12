@@ -45,16 +45,41 @@ public class AddTaskActivity extends Activity {
     }
 
 
-        private void dataHandler ()
-        {
+        private void dataHandler () {
             boolean isOk = true;//if all the fields filled well
             String Title = titleET.getText().toString();
             String Task = taskET.getText().toString();
             String DueDate = editText3.getText().toString();
-            int SeekBar1 = seekBar1.getProgress();
-            int SeekBar2 = seekBar2.getProgress();
+            int Necessary = seekBar1.getProgress();
+            int important= seekBar2.getProgress();
 
+            if (Title.length() < 4)
+            {
+                titleET.setError("Title have to be at least 4 letters");
+                isOk=false;
+
+            }
+            if (Task.length()==)
+            {
+                taskET.setError("Text can not be empty");
+                isOk=false;
+
+
+            }
+            if (DueDate.length()<4)
+            {
+                editText3.setError("have to be at least 4 chars");
+
+            }
+
+
+            if (isOk)
+            {
+                MyTask1 task1=
+            }
         }
+
+
 
 
     }

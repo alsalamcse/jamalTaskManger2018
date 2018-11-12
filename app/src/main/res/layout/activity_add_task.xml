@@ -35,6 +35,14 @@
         tools:layout_editor_absoluteX="16dp"
         tools:layout_editor_absoluteY="137dp" />
 
+    <TextView
+        android:id="@+id/nTv"
+        android:layout_width="83dp"
+        android:layout_height="29dp"
+        android:text="Necessary"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="207dp" />
+
     <SeekBar
         android:id="@+id/seekBar1"
         style="@style/Widget.AppCompat.SeekBar.Discrete"
@@ -45,14 +53,6 @@
         android:visibility="visible"
         tools:layout_editor_absoluteX="16dp"
         tools:layout_editor_absoluteY="169dp" />
-
-    <TextView
-        android:id="@+id/nTv"
-        android:layout_width="83dp"
-        android:layout_height="29dp"
-        android:text="Necessary"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="207dp" />
 
     <SeekBar
         android:id="@+id/seekBar2"
