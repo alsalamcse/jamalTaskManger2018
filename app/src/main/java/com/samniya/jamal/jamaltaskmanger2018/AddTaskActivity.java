@@ -8,6 +8,8 @@ import android.widget.EditText;
 import android.widget.SeekBar;
 import android.widget.TextView;
 
+import com.samniya.jamal.jamaltaskmanger2018.taskFragments.MyTasksFragmentFragment;
+
 public class AddTaskActivity extends Activity {
 
     private EditText titleET, taskET, editText3;
@@ -59,7 +61,7 @@ public class AddTaskActivity extends Activity {
                 isOk=false;
 
             }
-            if (Task.length()==)
+            if (Task.length()==0)
             {
                 taskET.setError("Text can not be empty");
                 isOk=false;
@@ -71,15 +73,50 @@ public class AddTaskActivity extends Activity {
                 editText3.setError("have to be at least 4 chars");
 
             }
+            
+
+                if (isOk)
+                {
+                    MyTask1 task1=new MyTask1();
+                    task1.setCreatedAT(new Date());
+                    task1.setDueDate(new Date(duedate1));
+                    task1.setText(text1);
+                    task1.setTitle(title1);
+                    task1.setImportant(important1);
+                    task1.setNecessary(necessary);
 
 
-            if (isOk)
-            {
-                MyTask1 task1=
-            }
+                    FirebaseAuth auth= FirebaseAuth.getInstance();
+                    task1.setOwner(auth.getCurrentUser().getEmail());
+
+                    DatabaseReference reference= FirebaseDatabase.getInstance().getReference();
+
+
+                    String key=reference.child("MyTasks").push().getKey();
+                    task1.setKey(key);
+
+                    reference.child("MyTasks").child(key).setValue(task1).addOnCompleteListener(new OnCompleteListener<Void>() {
+                        @Override
+                        public void onComplete(@NonNull Task<Void> task) {
+                            if (task.isSuccessful()) {
+                                Toast.makeText(AddTAskActivity.this, "Add Successful", Toast.LENGTH_LONG).show();
+                            }
+                            else
+                            {
+                                Toast.makeText(AddTAskActivity.this,"add Failed",Toast.LENGTH_LONG).show();
+                            }
+
+
+                        }
+                    });
+
+                }
+
+
         }
 
 
 
+}
 
-    }
+       
